@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鹿児島の空き家管理サービス｜遠方でも安心・月100円〜 | TAMARIE</title>
+<meta name="description" content="鹿児島の空き家管理はTAMARIEにお任せください。遠方にお住まいでも月1回の巡回・写真レポートで安心。初年度月100円〜のキャンペーン中。鹿児島県全域対応。">
+<meta name="keywords" content="鹿児島 空き家管理,空き家管理 鹿児島,鹿児島 空き家 巡回,遠方 空き家管理,空き家管理 費用,タマリエ,TAMARIE">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tamarie.jp/kanri">
+<meta property="og:title" content="鹿児島の空き家管理サービス｜遠方でも安心・月100円〜 | TAMARIE">
+<meta property="og:description" content="鹿児島の空き家管理はTAMARIEにお任せください。月1回の巡回・写真レポートで安心。初年度月100円〜。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tamarie.jp/kanri">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --sunset: hsl(18,78%,56%);
+  --sunset-deep: hsl(16,70%,48%);
+  --forest: hsl(148,48%,23%);
+  --forest-deep: hsl(150,42%,18%);
+  --cream: hsl(36,33%,93%);
+  --earth-dark: hsl(24,22%,14%);
+  --bg: hsl(36,33%,96%);
+  --muted: hsl(25,12%,42%);
+  --border: hsl(36,20%,86%);
+  --shadow-soft: 0 4px 20px -8px hsl(25 30% 15% / 0.15);
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--earth-dark); line-height: 1.7; font-size: 15px; padding-bottom: 56px; }
+.container { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* HEADER */
+header {
+  position: sticky; top: 0; z-index: 50;
+  background: hsla(36,33%,96%,0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  height: 60px; display: flex; align-items: center;
+}
+.header-inner { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 1.25rem; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-family: 'Noto Serif JP', serif; font-size: 0.88rem; font-weight: 700; color: var(--earth-dark); }
+.logo span { color: var(--sunset); }
+.header-nav { display: flex; gap: 1.25rem; align-items: center; }
+.header-nav a { font-size: 0.78rem; color: var(--muted); }
+.header-nav a:hover { color: var(--sunset); }
+.header-btn { background: var(--sunset); color: white !important; padding: 0.45rem 1.1rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; }
+
+/* HERO */
+.hero {
+  background: var(--forest-deep);
+  padding: 0;
+  text-align: center;
+}
+.hero-text-area {
+  background: var(--forest-deep);
+  padding: 3.5rem 1.5rem 3.5rem;
+  text-align: center;
+}
+.hero-overlay { display: none; }
+.hero-inner {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 700px; margin: 0 auto;
+}
+.hero-eyebrow {
+  display: inline-block;
+  background: rgba(232,103,58,0.25);
+  border: 1px solid rgba(232,103,58,0.6);
+  color: #f4a07a;
+  font-size: 0.72rem; letter-spacing: 0.18em;
+  padding: 0.35rem 1.1rem; border-radius: 9999px;
+  margin-bottom: 1.25rem;
+}
+.hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  font-weight: 700; color: white; line-height: 1.45;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.hero h1 em { color: #f4a07a; font-style: normal; }
+.hero-sub {
+  font-size: 0.9rem; color: rgba(255,255,255,0.82);
+  line-height: 2; margin-bottom: 1.75rem;
+}
+/* 価格ブロック */
+.hero-price-block {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin: 0 auto 1.75rem;
+  max-width: 500px;
+  border: 3px solid #cc2222;
+}
+.hero-price-block-label {
+  font-size: 0.82rem; letter-spacing: 0.05em;
+  color: #cc2222; font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+/* PC：横並び・超特大 / スマホ：縦積みで崩れない */
+.hero-price-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.1rem;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+}
+.hero-price-main .price-unit {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #cc2222; font-weight: 700;
+  align-self: flex-end; padding-bottom: 0.6rem;
+}
+.hero-price-main .price-num {
+  font-size: clamp(5rem, 16vw, 9rem);
+  font-weight: 900; color: #cc2222;
+  line-height: 1; letter-spacing: -0.04em;
+}
+.hero-price-main .price-yen {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  color: #cc2222; font-weight: 700;
+  align-self: flex-end; padding-bottom: 0.4rem;
+}
+.hero-price-main .price-suffix {
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  color: #cc2222; font-weight: 700;
+  align-self: flex-end; padding-bottom: 0.6rem;
+}
+.hero-price-note {
+  font-size: 0.72rem; color: #888;
+}
+.hero-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--sunset); color: white;
+  padding: 0.85rem 2rem; border-radius: 9999px;
+  font-weight: 700; font-size: 0.92rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover { background: var(--sunset-deep); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: transparent; color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 0.85rem 1.5rem; border-radius: 9999px;
+  font-size: 0.88rem;
+}
+
+/* WORRY SECTION */
+.worry { background: white; padding: 2.5rem 0; }
+.sec-label { font-size: 0.68rem; letter-spacing: 0.25em; color: var(--muted); text-align: center; margin-bottom: 0.5rem; }
+.sec-title { font-family: 'Noto Serif JP', serif; font-size: clamp(1.2rem,4vw,1.6rem); font-weight: 700; text-align: center; margin-bottom: 1.75rem; }
+.worry-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+@media(min-width:600px){ .worry-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.worry-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: flex; align-items: flex-start; gap: 0.4rem;
+  line-height: 1.6;
+}
+.worry-item::before { content: '✓'; color: var(--sunset); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+/* SERVICE SECTION */
+.service { background: var(--bg); padding: 3rem 0; }
+.service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media(min-width:640px){ .service-grid { grid-template-columns: repeat(3,1fr); } }
+@media(min-width:900px){ .service-grid { grid-template-columns: repeat(4,1fr); } }
+.service-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem;
+  text-align: center;
+}
+.service-num {
+  width: 28px; height: 28px;
+  background: var(--forest);
+  color: white;
+  border-radius: 50%;
+  font-size: 0.72rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 0.6rem;
+}
+.service-icon { font-size: 1.6rem; margin-bottom: 0.4rem; }
+.service-name { font-size: 0.82rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--earth-dark); }
+.service-desc { font-size: 0.72rem; color: var(--muted); line-height: 1.6; }
+
+/* PLAN SECTION */
+.plan { background: white; padding: 3rem 0; }
+.plan-table-wrap { overflow-x: auto; }
+.plan-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 0.82rem; min-width: 520px;
+}
+.plan-table th {
+  padding: 1rem 0.75rem; text-align: center;
+  border-bottom: 2px solid var(--border);
+}
+.plan-table th.plan-head {
+  background: var(--bg);
+  font-size: 0.72rem; color: var(--muted); font-weight: 400;
+  text-align: left;
+}
+.plan-col-a { background: hsl(36,25%,97%); }
+.plan-col-b { background: hsl(18,90%,97%); border-left: 2px solid var(--sunset); border-right: 2px solid var(--sunset); }
+.plan-col-c { background: hsl(148,20%,97%); }
+.plan-name { font-family: 'Noto Serif JP', serif; font-size: 0.92rem; font-weight: 700; }
+.plan-badge {
+  display: inline-block; font-size: 0.65rem; font-weight: 700;
+  padding: 0.15rem 0.5rem; border-radius: 4px;
+  background: var(--sunset); color: white; margin-left: 4px;
+}
+.plan-price { font-size: 1.3rem; font-weight: 700; color: var(--sunset); }
+.plan-price-note { font-size: 0.65rem; color: var(--muted); font-weight: 400; }
+.plan-table td {
+  padding: 0.65rem 0.75rem; text-align: center;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+.plan-table td:first-child { text-align: left; color: var(--earth-dark); }
+.check { color: var(--forest); font-size: 1rem; }
+.check-partial { color: var(--sunset); font-size: 0.75rem; }
+.plan-note { font-size: 0.75rem; color: var(--muted); margin-top: 1rem; line-height: 1.9; }
+
+/* FLOW SECTION */
+.flow { background: var(--bg); padding: 3rem 0; }
+.flow-list { display: flex; flex-direction: column; gap: 0; }
+.flow-item {
+  display: flex; gap: 1rem; align-items: flex-start;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.flow-item:last-child { border-bottom: none; }
+.flow-num {
+  width: 36px; height: 36px; flex-shrink: 0;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.82rem; font-weight: 700;
+}
+.flow-num-green { background: var(--forest); color: white; }
+.flow-num-orange { background: var(--sunset); color: white; }
+.flow-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.25rem; }
+.flow-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.8; }
+
+/* VOICE SECTION */
+.voice { background: white; padding: 3rem 0; }
+.voice-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media(min-width:640px){ .voice-grid { grid-template-columns: 1fr 1fr 1fr; } }
+.voice-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+.voice-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--forest);
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+.voice-text { font-size: 0.82rem; color: var(--muted); line-height: 1.9; margin-bottom: 0.75rem; }
+.voice-name { font-size: 0.75rem; color: var(--earth-dark); font-weight: 700; }
+
+/* FAQ */
+.faq { background: var(--bg); padding: 3rem 0; }
+.faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.faq-item { background: white; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-q {
+  padding: 1rem 1.25rem;
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  cursor: pointer; font-size: 0.88rem; font-weight: 700;
+}
+.faq-q-icon { color: var(--sunset); font-weight: 700; font-size: 1rem; flex-shrink: 0; }
+.faq-arrow { margin-left: auto; color: var(--muted); transition: transform 0.2s; flex-shrink: 0; }
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-a {
+  display: none; padding: 0 1.25rem 1rem 2.9rem;
+  font-size: 0.82rem; color: var(--muted); line-height: 1.9;
+}
+.faq-item.open .faq-a { display: block; }
+
+/* AREA */
+.area { background: white; padding: 3rem 0; }
+.area-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+.area-tag {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 9999px; padding: 0.35rem 1rem;
+  font-size: 0.78rem; color: var(--muted);
+}
+.area-tag.main { background: hsl(148,20%,92%); border-color: hsl(148,30%,70%); color: var(--forest); font-weight: 700; }
+
+/* CTA SECTION */
+.cta-section {
+  background: var(--forest);
+  padding: 3rem 1.25rem;
+  text-align: center;
+}
+.cta-section h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.2rem,4vw,1.6rem); font-weight: 700; color: white; margin-bottom: 0.75rem; }
+.cta-section p { font-size: 0.85rem; color: rgba(255,255,255,0.78); margin-bottom: 1.5rem; line-height: 1.9; }
+.cta-contact-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  max-width: 460px; margin: 0 auto;
+  padding: 1.5rem;
+}
+.cta-contact-box label { display: block; font-size: 0.75rem; color: rgba(255,255,255,0.6); text-align: left; margin-bottom: 0.3rem; }
+.cta-contact-box input,
+.cta-contact-box textarea {
+  width: 100%; background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px; padding: 0.6rem 0.8rem;
+  color: white; font-size: 0.85rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 0.75rem;
+}
+.cta-contact-box input::placeholder,
+.cta-contact-box textarea::placeholder { color: rgba(255,255,255,0.35); }
+.cta-contact-box textarea { height: 80px; resize: none; }
+.cta-submit {
+  width: 100%; background: var(--sunset); color: white;
+  border: none; padding: 0.9rem;
+  border-radius: 9999px; font-size: 0.92rem; font-weight: 700;
+  cursor: pointer; font-family: 'Noto Sans JP', sans-serif;
+  transition: background 0.2s;
+}
+.cta-submit:hover { background: var(--sunset-deep); }
+
+/* FOOTER */
+footer { background: var(--earth-dark); color: rgba(255,255,255,0.6); text-align: center; padding: 2rem 1.25rem; font-size: 0.78rem; line-height: 2; }
+footer a { color: rgba(255,255,255,0.45); margin: 0 0.5rem; }
+
+/* MOBILE NAV */
+.mobile-nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; }
+.mobile-nav a {
+  display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+  height: 56px; background: var(--sunset); color: white;
+  font-weight: 700; font-size: 0.88rem;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">鹿児島空き家管理センター<span>｜TAMARIE</span></a>
+    <nav class="header-nav">
+      <a href="index.html">TOP</a>
+      <a href="blog.html">コラム</a>
+      <a href="#contact" class="header-btn">無料相談</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text-area">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">鹿児島の空き家管理専門サービス</p>
+      <h1>遠くにいても、<em>安心して</em><br>任せられる空き家管理</h1>
+      <p class="hero-sub">
+        月1回の定期巡回・写真レポートで、大切な実家を守ります。<br>
+        鹿児島県全域対応。遠方の方もメールでお申し込みできます。
+      </p>
+      <div class="hero-price-block">
+        <p class="hero-price-block-label">🎉 初年度キャンペーン実施中</p>
+        <div class="hero-price-main">
+          <span class="price-unit">月額</span>
+          <span class="price-num">100</span>
+          <span class="price-yen">円</span>
+          <span class="price-suffix">〜（税込）</span>
+        </div>
+        <p class="hero-price-note">※2年目以降は月額3,800円〜。まずはお気軽にご相談ください。</p>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">✉️ 無料相談はこちら</a>
+        <a href="#plans" class="btn-outline">料金プランを見る ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORRY -->
+<section class="worry">
+  <div class="container">
+    <p class="sec-label">WORRY</p>
+    <h2 class="sec-title">こんなお悩みありませんか？</h2>
+    <div class="worry-grid">
+      <div class="worry-item">遠方に住んでいて実家の管理ができない</div>
+      <div class="worry-item">空き家が今どんな状態か不安</div>
+      <div class="worry-item">近隣からの苦情・トラブルが心配</div>
+      <div class="worry-item">雑草・害虫が発生していないか気になる</div>
+      <div class="worry-item">特定空き家に指定されないか心配</div>
+      <div class="worry-item">相続したけどどうしたらいいかわからない</div>
+      <div class="worry-item">親戚や知人に頼むのは気を遣う</div>
+      <div class="worry-item">自然災害後に家の状態が心配</div>
+      <div class="worry-item">いつかは売りたいけど今は決められない</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE CONTENT -->
+<section class="service" id="service">
+  <div class="container">
+    <p class="sec-label">SERVICE</p>
+    <h2 class="sec-title">管理サービスの内容</h2>
+
+    <!-- 基本サービス -->
+    <div style="background:white;border:2px solid var(--forest);border-radius:16px;padding:1.75rem;margin-bottom:1.25rem">
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+        <span style="background:var(--forest);color:white;font-size:0.72rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:9999px">基本サービス（料金内）</span>
+        <span style="font-size:0.8rem;color:var(--muted)">毎月1回実施</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div style="display:flex;gap:0.75rem;align-items:flex-start">
+          <span style="font-size:1.5rem;flex-shrink:0">🏠</span>
+          <div>
+            <div style="font-size:0.88rem;font-weight:700;margin-bottom:0.2rem">現地巡回・建物確認</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.7">外壁・屋根・敷地内を目視点検。異常・不審者の痕跡がないか確認します。</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:0.75rem;align-items:flex-start">
+          <span style="font-size:1.5rem;flex-shrink:0">📷</span>
+          <div>
+            <div style="font-size:0.88rem;font-weight:700;margin-bottom:0.2rem">写真撮影・レポート送付</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.7">現状写真を撮影し、巡回後に写真付きレポートをメールでお届けします。</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:0.75rem;align-items:flex-start">
+          <span style="font-size:1.5rem;flex-shrink:0">🚨</span>
+          <div>
+            <div style="font-size:0.88rem;font-weight:700;margin-bottom:0.2rem">異常発見時の即連絡</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.7">雨漏り・破損・不法侵入など問題を発見した場合、速やかにご連絡します。</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:0.75rem;align-items:flex-start">
+          <span style="font-size:1.5rem;flex-shrink:0">💬</span>
+          <div>
+            <div style="font-size:0.88rem;font-weight:700;margin-bottom:0.2rem">売却・活用の相談対応</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.7">「そろそろ売りたい」という場合も、管理中からご相談いただけます。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- オプション -->
+    <div style="background:hsl(36,25%,97%);border:1px solid var(--border);border-radius:16px;padding:1.75rem">
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+        <span style="background:var(--sunset);color:white;font-size:0.72rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:9999px">オプション（別途お見積り）</span>
+        <span style="font-size:0.8rem;color:var(--muted)">必要な時だけ追加できます</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem">
+        <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:0.9rem;text-align:center">
+          <div style="font-size:1.4rem;margin-bottom:0.4rem">🌿</div>
+          <div style="font-size:0.82rem;font-weight:700;margin-bottom:0.2rem">草刈り・除草</div>
+          <div style="font-size:0.72rem;color:var(--muted)">敷地内の雑草処理</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:0.9rem;text-align:center">
+          <div style="font-size:1.4rem;margin-bottom:0.4rem">✂️</div>
+          <div style="font-size:0.82rem;font-weight:700;margin-bottom:0.2rem">庭木の剪定</div>
+          <div style="font-size:0.72rem;color:var(--muted)">越境・景観トラブル防止</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:0.9rem;text-align:center">
+          <div style="font-size:1.4rem;margin-bottom:0.4rem">🧹</div>
+          <div style="font-size:0.82rem;font-weight:700;margin-bottom:0.2rem">清掃・ゴミ処理</div>
+          <div style="font-size:0.72rem;color:var(--muted)">室内外の清掃・不法投棄対応</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:0.9rem;text-align:center">
+          <div style="font-size:1.4rem;margin-bottom:0.4rem">🔧</div>
+          <div style="font-size:0.82rem;font-weight:700;margin-bottom:0.2rem">簡易修繕</div>
+          <div style="font-size:0.72rem;color:var(--muted)">軽微な破損の応急対応</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:0.9rem;text-align:center">
+          <div style="font-size:1.4rem;margin-bottom:0.4rem">📬</div>
+          <div style="font-size:0.82rem;font-weight:700;margin-bottom:0.2rem">郵便物転送</div>
+          <div style="font-size:0.72rem;color:var(--muted)">ポスト回収・指定先へ転送</div>
+        </div>
+        <div style="background:white;border:1px solid var(--border);border-radius:10px;padding:0.9rem;text-align:center">
+          <div style="font-size:1.4rem;margin-bottom:0.4rem">📦</div>
+          <div style="font-size:0.82rem;font-weight:700;margin-bottom:0.2rem">その他作業</div>
+          <div style="font-size:0.72rem;color:var(--muted)">ご要望に応じてご相談</div>
+        </div>
+      </div>
+      <p style="font-size:0.75rem;color:var(--muted);margin-top:1rem;text-align:center">オプション費用は作業内容・規模によって異なります。まずはご相談ください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="plan" id="plans">
+  <div class="container">
+    <p class="sec-label">PLAN</p>
+    <h2 class="sec-title">料金プラン</h2>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.25rem">
+      <!-- 1年目 -->
+      <div style="border:3px solid #cc2222;border-radius:16px;padding:1.75rem;text-align:center;background:white;position:relative">
+        <div style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#cc2222;color:white;font-size:0.7rem;font-weight:700;padding:0.25rem 1rem;border-radius:9999px;white-space:nowrap">🎉 初年度キャンペーン</div>
+        <div style="font-size:0.82rem;color:var(--muted);margin-bottom:0.5rem;margin-top:0.5rem">契約1年目</div>
+        <div style="display:flex;align-items:baseline;justify-content:center;gap:0.15rem;margin-bottom:0.25rem">
+          <span style="font-size:1rem;color:#cc2222;font-weight:700">月額</span>
+          <span style="font-size:4.5rem;font-weight:900;color:#cc2222;line-height:1;letter-spacing:-0.04em">100</span>
+          <span style="font-size:1.8rem;font-weight:700;color:#cc2222">円</span>
+          <span style="font-size:0.9rem;color:#cc2222;font-weight:700">〜</span>
+        </div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1.25rem">税込 / 年間1,200円〜</div>
+        <div style="background:#fff0f0;border-radius:8px;padding:0.9rem;font-size:0.8rem;color:#333;text-align:left;line-height:1.9">
+          <div>✅ 月1回 現地巡回・建物確認</div>
+          <div>✅ 写真付きレポート送付</div>
+          <div>✅ 異常発見時の即連絡</div>
+          <div>✅ 売却・活用のご相談</div>
+        </div>
+      </div>
+
+      <!-- 2年目〜 -->
+      <div style="border:2px solid var(--forest);border-radius:16px;padding:1.75rem;text-align:center;background:white;position:relative">
+        <div style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--forest);color:white;font-size:0.7rem;font-weight:700;padding:0.25rem 1rem;border-radius:9999px;white-space:nowrap">2年目以降</div>
+        <div style="font-size:0.82rem;color:var(--muted);margin-bottom:0.5rem;margin-top:0.5rem">契約2年目〜</div>
+        <div style="display:flex;align-items:baseline;justify-content:center;gap:0.15rem;margin-bottom:0.25rem">
+          <span style="font-size:1rem;color:var(--forest);font-weight:700">月額</span>
+          <span style="font-size:4.5rem;font-weight:900;color:var(--forest);line-height:1;letter-spacing:-0.04em">3,800</span>
+          <span style="font-size:1.8rem;font-weight:700;color:var(--forest)">円</span>
+          <span style="font-size:0.9rem;color:var(--forest);font-weight:700">〜</span>
+        </div>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1.25rem">税込 / 年間45,600円〜</div>
+        <div style="background:hsl(148,20%,95%);border-radius:8px;padding:0.9rem;font-size:0.8rem;color:#333;text-align:left;line-height:1.9">
+          <div>✅ 月1回 現地巡回・建物確認</div>
+          <div>✅ 写真付きレポート送付</div>
+          <div>✅ 異常発見時の即連絡</div>
+          <div>✅ 売却・活用のご相談</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- オプション料金 -->
+    <div style="background:hsl(36,25%,97%);border:1px solid var(--border);border-radius:12px;padding:1.25rem">
+      <p style="font-size:0.82rem;font-weight:700;color:var(--earth-dark);margin-bottom:0.5rem">オプション作業（別途お見積り）</p>
+      <p style="font-size:0.78rem;color:var(--muted);line-height:1.9">草刈り・除草 / 庭木の剪定 / 清掃・ゴミ処理 / 郵便物転送 / 簡易修繕 など<br>必要な作業を都度ご依頼いただけます。費用は規模・内容によりお見積りします。</p>
+    </div>
+
+    <p class="plan-note" style="margin-top:1rem">
+      ※上記はすべて税込価格です。<br>
+      ※1年目の月額100円はキャンペーン価格です。2年目以降は月額3,800円〜となります。<br>
+      ※物件の規模・立地・状況により料金が変動する場合があります。詳しくはご相談ください。
+    </p>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow" id="flow">
+  <div class="container">
+    <p class="sec-label">FLOW</p>
+    <h2 class="sec-title">ご利用までの流れ</h2>
+    <div class="flow-list">
+      <div class="flow-item">
+        <div class="flow-num flow-num-green">1</div>
+        <div>
+          <div class="flow-title">無料相談・お問い合わせ</div>
+          <div class="flow-desc">メールまたはお電話でお気軽にご連絡ください。「検討中」「まだ決めていない」という段階でも大丈夫です。遠方の方もオンライン・メールで対応できます。</div>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-num flow-num-green">2</div>
+        <div>
+          <div class="flow-title">現地確認・プランのご提案</div>
+          <div class="flow-desc">担当スタッフが物件を確認し、お客様のご状況に合ったプランをご提案します。特に注意して管理してほしい箇所もお聞きします。</div>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-num flow-num-green">3</div>
+        <div>
+          <div class="flow-title">ご契約・鍵のお預かり</div>
+          <div class="flow-desc">プラン・サービス内容をご確認いただいたうえで契約手続きを行います。鍵をお預かりする際は「預り証」を発行します。</div>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-num flow-num-green">4</div>
+        <div>
+          <div class="flow-title">管理スタート・定期巡回</div>
+          <div class="flow-desc">契約翌月より管理を開始します。定期巡回後10営業日以内に写真付きレポートをメールにてお送りします。</div>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-num flow-num-orange">5</div>
+        <div>
+          <div class="flow-title">売却・活用への移行もワンストップ</div>
+          <div class="flow-desc">「そろそろ売りたい」「賃貸に出したい」という場合も、管理からシームレスに移行できます。TAMARIEは買取・売却・リノベーションまで一括対応しています。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section class="voice">
+  <div class="container">
+    <p class="sec-label">VOICE</p>
+    <h2 class="sec-title">お客様の声</h2>
+    <div class="voice-grid">
+      <div class="voice-card">
+        <div class="voice-avatar">👩</div>
+        <p class="voice-text">大阪に住んでいるため鹿児島の実家を管理できず困っていました。写真付きのレポートが毎月届くので、遠くにいても状況がわかり本当に安心です。スタッフの方の対応もとても丁寧でした。</p>
+        <div class="voice-name">大阪府在住 / 60代女性（鹿児島市内の物件）</div>
+      </div>
+      <div class="voice-card">
+        <div class="voice-avatar">👨</div>
+        <p class="voice-text">相続した実家をどうするか決めかねていたため、まず管理をお願いしました。「売りたい時はいつでも相談して」という言葉が心強く、じっくり考えることができています。</p>
+        <div class="voice-name">福岡県在住 / 50代男性（霧島市内の物件）</div>
+      </div>
+      <div class="voice-card">
+        <div class="voice-avatar">👩</div>
+        <p class="voice-text">初年度月100円というキャンペーンがきっかけで相談しました。費用が明確でサービス内容もわかりやすく、近隣への挨拶も代わりにしてくださり助かっています。</p>
+        <div class="voice-name">東京都在住 / 40代女性（鹿児島市内の物件）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <p class="sec-label">FAQ</p>
+    <h2 class="sec-title">よくあるご質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-icon">Q</span>
+          遠方に住んでいますが申し込めますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">もちろんです。メールでのお申し込み・ご相談が可能です。現地の様子は写真付きレポートでお知らせするため、遠方の方でも安心してご利用いただけます。鹿児島県外からのご依頼も多数いただいております。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-icon">Q</span>
+          初年度月100円のキャンペーンとは？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">空き家管理の第一歩を踏み出していただきやすいよう、初年度は月額100円（税込）の特別キャンペーン価格でご提供しています。2年目以降は月額3,800円（税込）となります。どちらも基本サービス（月1回巡回・写真レポート送付）は同じ内容です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-icon">Q</span>
+          管理サービスの具体的な内容を教えてください。
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">基本サービスは「月1回の現地巡回・建物確認・写真撮影・レポート送付」です。草刈り・庭木の剪定・清掃・郵便物転送などの作業は別途オプションとなります。必要な時だけ追加できますので、まずはご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-icon">Q</span>
+          管理をお願いしながら売却の相談もできますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">はい、可能です。TAMARIEでは管理サービスと並行して、売却・買取・賃貸活用のご相談も承っています。「管理しながらじっくり考えたい」という方も大歓迎です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-icon">Q</span>
+          契約期間や解約はどうなりますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">契約期間は柔軟に対応しています。短期間からの契約も可能ですし、売却が決まった場合など途中解約にも対応しています。詳しくはご相談時にお伝えします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-icon">Q</span>
+          鹿児島市外でも対応していますか？
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-a">鹿児島県全域に対応しています。霧島市・姶良市・薩摩川内市・指宿市・南九州市など、市外の物件もお気軽にご相談ください。エリアによっては別途交通費が発生する場合があります。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="area">
+  <div class="container">
+    <p class="sec-label">AREA</p>
+    <h2 class="sec-title">対応エリア</h2>
+    <p style="font-size:0.85rem;color:var(--muted);text-align:center;margin-bottom:0.5rem">鹿児島県全域に対応しています。</p>
+    <div class="area-tags">
+      <span class="area-tag main">鹿児島市</span>
+      <span class="area-tag main">霧島市</span>
+      <span class="area-tag main">姶良市</span>
+      <span class="area-tag">薩摩川内市</span>
+      <span class="area-tag">指宿市</span>
+      <span class="area-tag">南九州市</span>
+      <span class="area-tag">南さつま市</span>
+      <span class="area-tag">いちき串木野市</span>
+      <span class="area-tag">出水市</span>
+      <span class="area-tag">曽於市</span>
+      <span class="area-tag">志布志市</span>
+      <span class="area-tag">阿久根市</span>
+      <span class="area-tag">垂水市</span>
+      <span class="area-tag">さつま町</span>
+      <span class="area-tag">その他県内全域</span>
+    </div>
+    <p style="font-size:0.75rem;color:var(--muted);margin-top:1rem">※上記エリア以外の方もお気軽にご相談ください。エリアにより交通費が発生する場合があります。</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <h2>まずはお気軽にご相談ください</h2>
+  <p>「検討中」「状況を聞いてみたい」だけでも大丈夫です。<br>相談・お見積りはすべて無料です。</p>
+  <div class="cta-contact-box">
+    <form action="https://formspree.io/f/maqkavlr" method="POST">
+      <label>お名前</label>
+      <input type="text" name="name" placeholder="山田 太郎" required>
+      <label>メールアドレス</label>
+      <input type="email" name="email" placeholder="example@email.com" required>
+      <label>物件の所在地（任意）</label>
+      <input type="text" name="location" placeholder="例：鹿児島市〇〇町">
+      <label>ご相談内容</label>
+      <textarea name="message" placeholder="空き家管理についてご相談したいです..."></textarea>
+      <input type="hidden" name="subject" value="【空き家管理】TAMARIEへのお問い合わせ">
+      <button type="submit" class="cta-submit">✉️ 送信する（無料）</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="color:rgba(255,255,255,0.75);margin-bottom:0.5rem">タマリエ（株式会社TAMARIE）は鹿児島の空き家管理・売買の専門会社です。</p>
+  <p>© 2025 株式会社TAMARIE All Rights Reserved.</p>
+  <p style="margin-top:0.5rem">
+    <a href="index.html">TOP（空き家相談センター）</a>
+    <a href="blog.html">コラム</a>
+    <a href="#contact">お問い合わせ</a>
+  </p>
+  <p style="margin-top:0.5rem;color:rgba(255,255,255,0.4)">📍 鹿児島県鹿児島市坂元町49-35</p>
+</footer>
+
+<nav class="mobile-nav">
+  <a href="#contact">✉️ 無料相談はこちら（メール）</a>
+</nav>
+
+<script>
+function toggleFaq(el) {
+  const item = el.parentElement;
+  item.classList.toggle('open');
+}
+</script>
+</body>
+</html>
