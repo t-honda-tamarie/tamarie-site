@@ -1,68 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/</loc>
+    <loc>https://tamarie.jp/</loc>
     <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/blog</loc>
+    <loc>https://tamarie.jp/blog</loc>
     <lastmod>2025-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-tax-risk</loc>
+    <loc>https://tamarie.jp/column-tax-risk</loc>
     <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-sell-vs-manage</loc>
+    <loc>https://tamarie.jp/column-sell-vs-manage</loc>
     <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-inheritance</loc>
+    <loc>https://tamarie.jp/column-inheritance</loc>
     <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-renovation</loc>
+    <loc>https://tamarie.jp/column-renovation</loc>
     <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-specified-vacant</loc>
+    <loc>https://tamarie.jp/column-specified-vacant</loc>
     <lastmod>2025-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-sell-buyout</loc>
+    <loc>https://tamarie.jp/column-sell-buyout</loc>
     <lastmod>2025-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-demolition</loc>
+    <loc>https://tamarie.jp/column-demolition</loc>
     <lastmod>2025-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-neglect-risks</loc>
+    <loc>https://tamarie.jp/column-neglect-risks</loc>
     <lastmod>2025-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adorable-crostata-a28646.netlify.app/column-inheritance-guide</loc>
+    <loc>https://tamarie.jp/column-inheritance-guide</loc>
     <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/kanri</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/column-typhoon</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/column-akiya-bank</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/column-security</loc>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
