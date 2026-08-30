@@ -1,0 +1,117 @@
+name: Weekly column generation
+
+# 毎週、空き家コラムを3本＋ヒーロー画像を自動生成し、レビュー用の Pull Request を作成する。
+# 自動マージはしない。公開前に必ず人が内容（法令・数値）と生成画像を目視レビューすること。
+#
+# 必要な GitHub Secrets（Settings → Secrets and variables → Actions で登録）:
+#   ANTHROPIC_API_KEY  … Claude Code をヘッドレス実行するための Anthropic API キー
+#                        （console.anthropic.com で発行。従量課金。Claude のサブスクとは別枠）
+#   OPENAI_API_KEY     … gpt-image-1 で画像を生成するための OpenAI API キー
+#                        （gpt-image-1 は Organization Verification 済みの組織が必要）
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'   # 毎週月曜 00:00 UTC（= 月曜 09:00 JST）
+  workflow_dispatch: {}    # 手動実行も可（Actions タブから Run workflow）
+
+concurrency:
+  group: weekly-columns
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      DISABLE_AUTOUPDATER: '1'
+      DISABLE_TELEMETRY: '1'
+      DISABLE_ERROR_REPORTING: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check required secrets
+        run: |
+          test -n "$ANTHROPIC_API_KEY" || { echo "::error::ANTHROPIC_API_KEY secret is not set"; exit 1; }
+          test -n "$OPENAI_API_KEY"    || { echo "::error::OPENAI_API_KEY secret is not set"; exit 1; }
+          jq --version
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Generate this week's columns
+        env:
+          PROMPT: >-
+            .claude/skills/kagoshima-akiya-column/SKILL.md を読み、その手順に厳密に従って、
+            今週分の空き家コラムを3本作成してください。各記事のヒーロー画像も OpenAI の
+            gpt-image-1 API で自動生成し、既存の col*.jpg と同じディレクトリに保存してください。
+            blog.html の一覧カードと sitemap.xml も既存の書式に合わせて更新してください。
+            地域表現は「南九州」を使わず鹿児島全域を前提にし、市名を出す場合は
+            鹿児島市・薩摩川内市・霧島市・姶良市を用いてください。作業用の一時ファイルは
+            残さないでください。git のコミット・プッシュ・PR 作成は行わないでください
+            （後続のワークフローが担当します）。
+        run: |
+          claude -p "$PROMPT" \
+            --model claude-sonnet-5 \
+            --dangerously-skip-permissions \
+            --output-format text
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::コラム生成による変更がありませんでした。PR は作成しません。"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git status --porcelain
+          fi
+
+      - name: Create pull request
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE="$(date -u +%Y%m%d)"
+          BRANCH="auto/weekly-columns-${DATE}-${GITHUB_RUN_NUMBER}"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "週次コラム3本を自動生成 (${DATE})
+
+自動生成のため、公開前に必ず内容（法令・数値の正確性）と生成画像を目視レビューしてください。
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+          git push -u origin "$BRANCH"
+          {
+            echo "kagoshima-akiya-column スキルによる週次自動生成です。**自動マージはしません。**"
+            echo
+            echo "## レビュー観点"
+            echo "- [ ] 3本のテーマ・見出し・結論が既存コラムと重複していない"
+            echo "- [ ] meta-description が120〜160字 / 主要キーワードがタイトル・見出し・keywords に入っている"
+            echo "- [ ] 保険の物件区分・費用の目安など、法令／数値の記述に誤りがない（「目安」注記の有無）"
+            echo "- [ ] 生成画像3枚を目視確認（実写風か・既存画像と画が被っていないか・不自然な描写がないか）"
+            echo "- [ ] blog.html のカードと sitemap.xml が更新され、カテゴリタグの表記が本文・一覧で一致している"
+            echo
+            echo "問題なければマージしてください。"
+          } > pr-body.md
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "週次コラム3本を自動生成 (${DATE})" \
+            --body-file pr-body.md
+          rm -f pr-body.md
