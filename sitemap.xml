@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://tamarie.jp/blog</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -87,6 +87,24 @@
   <url>
     <loc>https://tamarie.jp/column-security</loc>
     <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/column-fire-insurance</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/column-parking-storage</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tamarie.jp/column-termite-pest</loc>
+    <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
