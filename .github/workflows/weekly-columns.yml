@@ -91,11 +91,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
           git add -A
-          git commit -m "週次コラム3本を自動生成 (${DATE})
-
-自動生成のため、公開前に必ず内容（法令・数値の正確性）と生成画像を目視レビューしてください。
-
-Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+          git commit -m "週次コラム3本を自動生成 (${DATE})" -m "自動生成のため、公開前に必ず内容（法令・数値の正確性）と生成画像を目視レビューしてください。" -m "Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
           git push -u origin "$BRANCH"
           {
             echo "kagoshima-akiya-column スキルによる週次自動生成です。**自動マージはしません。**"
