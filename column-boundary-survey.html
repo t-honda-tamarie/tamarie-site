@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>空き家の境界確定・測量トラブル｜売却前に知っておきたい注意点 | TAMARIE</title>
+<meta name="description" content="空き家の売却や相続では、境界が確定していないと契約が進まないことがあります。鹿児島の空き家オーナー向けに、境界トラブルが起きやすい理由、確定測量と現況測量の違い、費用の目安、早めに確認しておきたいポイントをTAMARIEが解説します。">
+<meta name="keywords" content="鹿児島 空き家 境界,空き家 測量,確定測量 費用,空き家 売却 境界,タマリエ">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tamarie.jp/column-boundary-survey">
+<meta property="og:title" content="空き家の境界確定・測量トラブル｜売却前に知っておきたい注意点 | TAMARIE">
+<meta property="og:description" content="空き家の売却や相続では、境界が確定していないと契約が進まないことがあります。境界トラブルが起きやすい理由と、確定測量の費用・進め方をTAMARIEが解説します。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tamarie.jp/column-boundary-survey">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Noto+Serif+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --sunset: hsl(18,78%,56%);
+  --sunset-deep: hsl(16,70%,48%);
+  --forest: hsl(148,48%,23%);
+  --earth-dark: hsl(24,22%,14%);
+  --bg: hsl(36,33%,96%);
+  --cream: hsl(36,33%,93%);
+  --muted: hsl(25,12%,42%);
+  --border: hsl(36,20%,86%);
+  --shadow-soft: 0 6px 24px -10px hsl(25 30% 15% / 0.18);
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--earth-dark); line-height: 1.7; font-size: 15px; padding-bottom: 56px; }
+.container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+.container-sm { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
+
+header {
+  position: sticky; top: 0; z-index: 50;
+  background: hsla(36,33%,96%,0.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  height: 64px; display: flex; align-items: center;
+}
+.header-inner { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 1.25rem; }
+.logo { font-family: 'Noto Serif JP', serif; font-size: 1rem; font-weight: 700; color: var(--earth-dark); text-decoration: none; }
+.logo span { color: var(--sunset); }
+.header-nav { display: flex; gap: 1.5rem; align-items: center; }
+.header-nav a { font-size: 0.82rem; color: var(--muted); text-decoration: none; }
+.header-nav a:hover { color: var(--sunset); }
+.header-nav .btn {
+  background: var(--sunset); color: white;
+  padding: 0.5rem 1.2rem; border-radius: 9999px;
+  font-size: 0.78rem; font-weight: 700;
+}
+
+.breadcrumb {
+  padding: 1rem 0; font-size: 0.75rem; color: var(--muted);
+  display: flex; gap: 0.5rem; align-items: center;
+}
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--sunset); }
+.breadcrumb span { color: var(--sunset); }
+
+.article-hero {
+  background: var(--earth-dark); color: white;
+  padding: 3rem 0 2rem;
+}
+.article-hero .breadcrumb { color: rgba(255,255,255,0.5); justify-content: center; }
+.article-hero .breadcrumb a { color: rgba(255,255,255,0.5); }
+.article-cat {
+  display: inline-block; background: var(--sunset);
+  color: white; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.1em; padding: 0.25rem 0.75rem; border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.article-title { font-family: 'Noto Serif JP', serif; font-size: clamp(1.4rem,5vw,2.2rem); font-weight: 700; line-height: 1.4; margin-bottom: 1rem; }
+.article-meta { font-size: 0.78rem; color: rgba(255,255,255,0.6); display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+
+.article-body { padding: 3rem 0; }
+.article-body h2 {
+  font-family: 'Noto Serif JP', serif; font-size: 1.4rem; font-weight: 700;
+  color: var(--earth-dark); margin: 2.5rem 0 1rem;
+  padding-left: 1rem; border-left: 4px solid var(--sunset);
+  line-height: 1.4;
+}
+.article-body h3 {
+  font-family: 'Noto Serif JP', serif; font-size: 1.1rem; font-weight: 700;
+  color: var(--earth-dark); margin: 2rem 0 0.75rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.article-body h3::before { content: '▶'; color: var(--sunset); font-size: 0.7rem; }
+.article-body p { font-size: 0.92rem; line-height: 1.95; color: var(--muted); margin-bottom: 1.25rem; }
+.article-body strong { color: var(--earth-dark); font-weight: 700; }
+.article-body img {
+  width: 100%; border-radius: 12px; margin: 1.5rem 0;
+  box-shadow: var(--shadow-soft);
+}
+.article-body .img-caption { font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: -1rem; margin-bottom: 1.5rem; }
+.article-box {
+  background: hsl(18,78%,56%,0.08); border: 1px solid hsl(18,78%,56%,0.25);
+  border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0;
+}
+.article-box-title { font-weight: 700; color: var(--sunset); margin-bottom: 0.75rem; font-size: 0.9rem; }
+.article-box ul { padding-left: 1.2rem; }
+.article-box li { font-size: 0.88rem; color: var(--muted); line-height: 1.8; margin-bottom: 0.3rem; }
+.article-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.85rem; }
+.article-table th { background: var(--forest); color: white; padding: 0.75rem 1rem; text-align: left; }
+.article-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); color: var(--muted); }
+.article-table tr:nth-child(even) td { background: hsl(36,25%,96%); }
+.article-warn {
+  background: hsl(0,70%,96%); border: 1px solid hsl(0,60%,85%);
+  border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;
+  font-size: 0.88rem; color: hsl(0,50%,35%); line-height: 1.8;
+}
+.article-warn::before { content: '⚠️ '; }
+.article-good {
+  background: hsl(148,40%,95%); border: 1px solid hsl(148,40%,80%);
+  border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0;
+  font-size: 0.88rem; color: var(--forest); line-height: 1.8;
+}
+.article-good::before { content: '✅ '; }
+
+.article-cta {
+  background: var(--forest); color: white;
+  border-radius: 16px; padding: 2rem; margin: 3rem 0;
+  text-align: center;
+}
+.article-cta h3 { font-family: 'Noto Serif JP', serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; color: white; }
+.article-cta h3::before { display: none; }
+.article-cta p { font-size: 0.85rem; color: rgba(255,255,255,0.85); margin-bottom: 1.25rem; }
+.btn-cta {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  height: 52px; padding: 0 2rem; border-radius: 9999px;
+  background: var(--sunset); color: white;
+  font-weight: 700; font-size: 0.92rem; text-decoration: none;
+  transition: all 0.2s; min-width: 220px;
+}
+.btn-cta:hover { background: var(--sunset-deep); transform: translateY(-2px); }
+
+.back-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  color: var(--muted); font-size: 0.82rem; text-decoration: none;
+  margin-bottom: 2rem; transition: color 0.2s;
+}
+.back-btn:hover { color: var(--sunset); }
+
+footer { background: var(--earth-dark); color: rgba(255,255,255,0.7); text-align: center; padding: 2rem 1.25rem; font-size: 0.78rem; line-height: 2; }
+footer a { color: rgba(255,255,255,0.5); text-decoration: none; margin: 0 0.5rem; }
+
+.mobile-nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; }
+.mobile-nav a {
+  display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+  height: 56px; background: var(--sunset); color: white;
+  font-weight: 700; font-size: 0.88rem; text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">鹿児島空き家相談センター<span>｜TAMARIE</span></a>
+    <nav class="header-nav">
+      <a href="index.html">TOP</a>
+      <a href="blog.html" style="color:var(--sunset)">コラム</a>
+      <a href="index.html#contact" class="btn">無料相談</a>
+    </nav>
+  </div>
+</header>
+  <div class="article-hero">
+    <div class="container-sm">
+      <div class="breadcrumb"><a href="index.html">TOP</a>›<a href="blog.html">コラム</a>›<span>境界確定・測量トラブル</span></div>
+      <span class="article-cat">境界確定・測量</span>
+      <h1 class="article-title">空き家の境界確定・測量トラブル<br>売却前に知っておきたい注意点</h1>
+      <div class="article-meta"><span>📅 2026年9月</span><span>✍️ TAMARIE編集部</span><span>⏱️ 約6分で読めます</span></div>
+    </div>
+  </div>
+
+  <div class="article-body">
+    <div class="container-sm">
+      <a href="blog.html" class="back-btn">← コラム一覧に戻る</a>
+
+      <img src="col22-boundary-survey.jpg" alt="測量士が空き家の敷地境界でトータルステーションを使って測量している様子" onerror="this.style.display='none'">
+      <p class="img-caption">境界があいまいなまま売却・相続の手続きを進めようとして、思わぬところで足止めされるケースは少なくありません</p>
+
+      <p>実家を売却しよう、あるいは相続の手続きを進めようとしたときに、<strong>「境界がはっきりしない」</strong>という壁にぶつかるオーナー様は少なくありません。特に古い分譲地や、隣地との間に長年明確な取り決めがなかった土地では、いざという時に手続きが止まってしまうことがあります。</p>
+      <p>この記事では、空き家で境界トラブルが起きやすい理由と、確定測量の進め方・費用の目安をまとめました。</p>
+
+      <h2>なぜ空き家は境界トラブルが起きやすいのか</h2>
+      <p>古い測量図しかない、あるいは測量図自体が残っていない。前の所有者の代で口頭の取り決めのまま済ませていた。隣地の所有者が代替わりし、<strong>境界の認識にズレが生じている</strong>。塀や生垣の位置が、必ずしも登記上の境界線と一致しているとは限らない――こうした事情が重なりやすいのが実情です。</p>
+      <p>空き家の場合、所有者が長く現地を離れていることが多いため、<strong>境界標（境界を示す杭やプレート）が失われていたり、隣地の状況が変わっていたりすることに気づきにくい</strong>という点も見落とされがちです。</p>
+
+      <h2>境界が確定していないと何に困るのか</h2>
+      <table class="article-table">
+        <tr><th>場面</th><th>起きる問題</th></tr>
+        <tr><td>売却</td><td>買主・仲介会社から境界確定を求められることが多く、未確定のままだと契約・引き渡しが進まないことがある</td></tr>
+        <tr><td>相続登記・分筆</td><td>土地を分けて相続する場合、境界が定まっていないと手続きを進められないことがある</td></tr>
+        <tr><td>隣地とのトラブル</td><td>塀や庭木の越境、工作物の位置をめぐって話がこじれることがある</td></tr>
+      </table>
+
+      <h2>確定測量と現況測量の違い</h2>
+      <p><strong>現況測量</strong>は、既存の資料や現地の状況をもとに、簡易的に面積・形状を把握する測量です。境界の法的な確定は伴いません。一方<strong>確定測量</strong>は、隣接するすべての土地所有者（場合によっては道路など官有地の管理者も）の立会いのもとで境界を確認し、境界標を設置する測量です。売却や分筆の際に求められるのは、主にこちらの確定測量です。</p>
+      <p>費用は隣接地の数や境界標の有無、筆界特定の要否によって変動するため一概には言えませんが、<strong>目安として数十万円程度、期間も数か月かかることがある</strong>とされています。あくまで目安であり、正確な金額は土地家屋調査士による現地調査後の見積もりで確認する必要があります。</p>
+
+      <h2>空き家の境界を放置しないためにできること</h2>
+      <div class="article-box">
+        <div class="article-box-title">📌 境界確認のチェックリスト</div>
+        <ul>
+          <li>古い測量図・登記簿謄本・境界標の有無を早めに確認しておく</li>
+          <li>隣地所有者の連絡先を把握しておく（代替わりしている場合は特に）</li>
+          <li>将来売却や相続の予定があるなら、早めに土地家屋調査士へ相談しておく</li>
+          <li>境界標が見当たらない場合は、自己判断で動かさず専門家に相談する</li>
+        </ul>
+      </div>
+
+      <div class="article-warn">境界標を撤去・移動したり、隣地所有者に無断で塀を設置したりすると、かえってトラブルを大きくすることがあります。境界に関わる作業は、必ず専門家を通して進めましょう。</div>
+
+      <p>TAMARIEでは、提携の土地家屋調査士のご紹介から、<strong>そもそも測量が必要かどうかの見極め</strong>まで、売却・相続を見据えたご相談に対応しています。</p>
+
+      <div class="article-good">「境界がどうなっているか分からないまま何年も経っている」という空き家も珍しくありません。まずは現状の資料が残っているかどうかから、一緒に確認しましょう。</div>
+
+      <h3>境界、最後に確認したのはいつですか？</h3>
+      <p>売却や相続の予定がまだ先でも、境界の状態を早めに把握しておくと、いざという時の選択肢が広がります。</p>
+
+      <div class="article-cta">
+        <h3>境界の状態、一度確認してみませんか？</h3>
+        <p>鹿児島の空き家の境界確認・測量のご相談を無料で承っています。</p>
+        <a href="index.html#contact" class="btn-cta">✉️ 無料相談はこちら</a>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <p>タマリエ（株式会社TAMARIE）は鹿児島の空き家相談の専門会社です。</p>
+  <p>© 2025 株式会社TAMARIE All Rights Reserved.</p>
+  <p style="margin-top:0.5rem">
+    <a href="index.html">TOP</a>
+    <a href="blog.html">コラム</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </p>
+</footer>
+
+<nav class="mobile-nav">
+  <a href="index.html#contact">✉️ 無料相談はこちら（メール）</a>
+</nav>
+
+</body>
+</html>
